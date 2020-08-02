@@ -1,0 +1,72 @@
+
+.app-footer {
+    background-color: #083FF7;
+    
+    }
+    
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .copyrights {
+        text-align: center;
+        color: white;
+        font-size: 0.8rem;
+        margin:1.875rem auto;
+        display: inline-block;
+    }
+    
+    .app-get-in-touch {
+        display: block;
+        margin: auto;
+        width: 100%;
+        margin-top:0.625rem;
+        font-size: 1.2rem;
+        border-radius: 50px;
+        color:#fff;
+        background-color: #F7083F;
+        transition: background-color 0.2s;
+        border: 1px solid transparent;
+    }
+    
+    .app-get-in-touch:hover {
+        background-color: #083FF7;
+        border: 1px solid #fff;
+        color:#fff;
+    }
+    
+    
+    .app-form-control-footer {
+        width:100%;
+        padding:0.625rem;
+        outline: none;
+        border:none;
+        font-size: 0.8rem;
+    }
+    
+    .app-form-control-footer:focus {
+        border:2px solid #F7083F; 
+    } 
+    
+    .app-form-group-footer {
+        min-width:30%;
+    }
+    
+    @media(max-width:500px) {
+        .app-form-group-footer {
+            width:80%;
+        }
+    }
+    
+    
+    @media(max-width:768px) and (min-width:500px) {
+        .app-form-group-footer {
+            width:70%;
+        }
+    }
+    
+    
+    

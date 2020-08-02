@@ -1,0 +1,125 @@
+
+.app-nav-wrapper {
+    background-color: #F7083F;
+    position: fixed;
+    width: 100%;
+    top:0px;
+    left:0px;
+    z-index: 999;
+}
+.app-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app-nav-list {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+
+.app-nav-list .app-nav-list-item {
+list-style-type: none;
+}
+
+.app-nav-list-item {
+padding: 1.250rem 0.625rem;
+cursor: pointer;
+border-bottom:3px solid transparent ;
+}
+
+.app-nav-list-item a {
+    text-decoration: none;
+    color:white;
+    font-size: 1rem;
+}
+
+.app-nav-list-item:hover {
+    background-color:  #F7C008;
+    border-bottom:3px solid #083FF7 ;
+
+}
+
+.app-nav-list-item:hover a {
+    color:#083FF7 ;
+}
+
+.app-drawer {
+    position: fixed;
+    z-index: 9999;
+    width: 60%;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    background-color: #fff;
+}
+
+.app-drawer li a{
+    color:#083FF7;
+}
+
+
+.app-drawer li {
+    text-align: left;
+}
+.app-drawer li:hover {
+    background-color: #F7083F;
+    border:none;
+}
+
+.app-drawer li:hover a {
+    color:white;
+}
+
+.app-hide {
+    display: none;
+}
+    
+
+
+.app-show {
+    display: block;
+}
+    
+
+.app-burger {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.app-burger div {
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    background-color:#fff;
+    margin-bottom: 5px;
+}
+
+@media(max-width:500px) {
+
+    .app-burger {
+        display: block;
+        margin-left: 0.625rem;
+    }
+
+    .app-nav-list {
+        display: none;
+    }
+
+    .app-brand {
+        margin:auto;
+    }
+
+    .app-nav {
+        position: relative;
+    }
+    .app-burger {
+        position: absolute;
+        top:35%;
+    }
+
+}

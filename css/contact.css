@@ -1,0 +1,103 @@
+@import './imports/utils.css';
+@import './imports/reset.css';
+@import './imports/header.css';
+@import './imports/footer.css';
+
+
+.contact {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10.25rem;;
+    
+}
+
+.contact-form-container {
+    display: flex;
+    flex:1 1 100%;
+    justify-content: center;
+}
+
+
+.contact-form-container div {
+    flex:1 1 50%;
+}
+
+
+.contact-address {
+    padding: 1.25rem;
+    background-color: #f7083f;
+    color: white;
+}
+
+
+.contact-form {
+    padding: 1.25rem;
+    background-color: #083ff7;
+    color: white;
+}
+.contact-address h2 {
+    display: block;
+    margin-top: 1.875rem;
+  
+}
+
+.contact-address h2::after {
+    content: '';
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color:white;
+    bottom: 21px;
+    right:0px;
+    display: inline-block;
+}
+
+.contact-address p {
+    margin-bottom: 0.625rem;
+}
+
+.app-form-group {
+    margin-bottom: 1.25rem;
+}
+
+.app-form-group label {
+    display: block;
+    margin-bottom: 0.625rem;
+}
+
+.app-form-control {
+    width: 100%;
+    padding: 0.625rem;
+    border:none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.app-form-control:focus {
+    border: 3px solid #f7083f;
+}
+
+.app-contact-me-btn {
+    width: 100%;
+    border-radius: 0px;
+    font-size: 1rem;
+    background-color: #F7C008;
+    color: #333;
+    border: 2px solid transparent;
+    transition:  background-color 0.2s;
+    }
+
+    .app-contact-me-btn:hover {
+        background-color: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+    }
+
+
+@media(max-width:500px) {
+    .contact-form-container {
+        flex-direction: column;
+    }
+}

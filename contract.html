@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/contact.css"/>
+</head>
+<body>
+    <header>
+        <div class="app-nav-wrapper">
+            <div class="app-container">
+                <nav class="app-nav">
+                    <div class="app-burger" onclick="showDrawer()" >
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="app-brand">
+                        <div class="app-logo">
+                            M
+                        </div>
+                    </div>
+                        
+                    <ul class="app-nav-list">
+                        <li class="app-nav-list-item"><a href="index.html">Home</a></li>
+                        <li class="app-nav-list-item"><a href="index.html#about-me">About Me</a></li>
+                        <li class="app-nav-list-item"><a href="index.html#experience">Experience</a></li>
+                        <li class="app-nav-list-item"><a href="index.html#projects">Projects</a></li>
+                        <li class="app-nav-list-item"><a href="javascript:void(0)">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="app-drawer">
+        <div class="app-logo app-logo-fixed-size app-m-bottom-30 app-m-top-30 ">
+            M
+        </div>
+        <ul>
+            <li class="app-nav-list-item"><a href="index.html">Home</a></li>
+            <li class="app-nav-list-item"><a href="index.html#about-me">About Me</a></li>
+            <li class="app-nav-list-item"><a href="index.html#experience">Experience</a></li>
+            <li class="app-nav-list-item"><a href="index.html#projects">Projects</a></li>
+            <li class="app-nav-list-item"><a href="javascript:void(0)"><i class="fa fa-address-book"></i>&nbsp;Contact Me</a></li>
+        </ul>
+    </section>
+    <div class="app-backdrop" onclick="hideDrawer()"></div>
+    <section class="contact app-container">
+                <div class="contact-form-container">
+                    <div class="contact-address">
+                        <h2> Address </h2>
+                        <p><span class="app-decorative-label">House No:</span>367</p>
+                        <p><span  class="app-decorative-label">Street:</span> 21</p>
+                        <p><span class="app-decorative-label">Locality:</span> Shakit Nagar</p>
+                        <p><span class="app-decorative-label">City:</span> Derabassi</p>
+                        <p><span class="app-decorative-label" >State:</span> Punjab</p>
+                        <p><span class="app-decorative-label">Dist.:</span> S.A.S Nagar Mohali</p>
+                    </div>
+    
+                    <div class="contact-form">
+                        <form action="javascript:void(0)">
+                            <div class="app-form-group">
+                                <label for="name">Name:</label>
+                                <input class="app-form-control" type="text" name="name" id="name">
+                            </div>
+    
+                            <div class="app-form-group">
+                                <label for="email">Email:</label>
+                                <input class="app-form-control" type="email" name="name" id="email">
+                            </div>
+    
+                            
+                            <div class="app-form-group">
+                                <label for="subject">Subject:</label>
+                                <input class="app-form-control" type="text" name="name" id="subject">
+                            </div>
+    
+                            <div class="app-form-group">
+                                <label for="message">Message:</label>
+                                <textarea class="app-form-control" rows="5" name="message" id="subject"></textarea>
+                            </div>
+                            <button type=submit class="app-btn app-contact-me-btn">
+                                <i class="fa  fa-send"></i>&nbsp;Send
+                            </button>
+                        </form>
+                    </div>
+                
+
+    
+           
+        </div>
+    </section>
+
+
+    <footer class="app-footer app-m-top-30"  >
+        <div class="app-container">
+            <div class="footer-content">
+                <div class="app-form-group-footer app-m-top-30">
+                    <input class="app-form-control-footer" placeholder="Email(someone@mail.com)" type=text />
+                    <button class="app-btn app-get-in-touch">Get in touch</button>
+                </div>
+                <div class="copyrights">
+                    All &copy; 2020 reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script>
+ document.querySelector('.app-drawer').classList.add('app-hide');
+ document.querySelector('.app-backdrop').classList.add('app-hide');
+
+function showDrawer() {
+    document.querySelector('.app-drawer').classList.remove('app-hide');
+    document.querySelector('.app-backdrop').classList.remove('app-hide');
+}
+
+function hideDrawer() {
+    document.querySelector('.app-drawer').classList.add('app-hide');
+    document.querySelector('.app-backdrop').classList.add('app-hide');
+}
+
+</script>
+</body>
+</html>
